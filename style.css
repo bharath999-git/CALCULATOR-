@@ -1,53 +1,85 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
 .calculator {
-  background: #222;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-  width: 300px;
+    width: 300px;
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-#display {
-  width: 100%;
-  height: 50px;
-  font-size: 24px;
-  text-align: right;
-  margin-bottom: 15px;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #fff;
+.display {
+    width: 100%;
+    height: 60px;
+    background: #222;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.message {
+    color: #ff6b6b;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    min-height: 20px;
 }
 
 .buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-button {
-  font-size: 20px;
-  padding: 15px;
-  border: none;
-  border-radius: 10px;
-  background: #444;
-  color: white;
-  cursor: pointer;
-  transition: background 0.2s;
+.btn {
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #555;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-button:hover {
-  background: #666;
+.btn:hover {
+    background: #777;
 }
 
-button.zero {
-  grid-column: span 2;
+.operator {
+    background: #ff9500;
 }
+
+.operator:hover {
+    background: #ffaa33;
+}
+
+.clear {
+    background: #ff3b30;
+}
+
+.clear:hover {
+    background: #ff5e54;
+}
+
+.equals {
+    background: #4cd964;
+    grid-column: span 2;
+}
+
+.equals:hover {
+    background: #5de073;
+}
+
